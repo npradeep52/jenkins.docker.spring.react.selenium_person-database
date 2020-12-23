@@ -11,13 +11,13 @@
 ### Pre Requisite Knowledge
 1. [Pre-Requisite Exercises](./README-prerequisite-knowledge.md)
 2. [Local Machine Software](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/dockerizing-jenkins/content.html)
-3. [Java Developer Notes](./README-javadev.md)
-4. [React Developer Notes](./README-reactdev.md)
-5. [Test Automation Engineer Notes](./README-qa.md)
+3. [Java Developer Notes](./webservice/README.md)
+4. [React Developer Notes](./client/README.md)
+5. [Test Automation Engineer Notes](./integration-testing/README.md)
 
 
 ### Part 1 - Creating Maven Pipeline with this Project
-* Please review the [Java Developer Notes](./README-javadev.md) for additional details on the Maven application
+* Please review the [Java Developer Notes](./webservice/README.md) for additional details on the Maven application
 * Create a Jenkins pipeline which
 	1. [Pulls a docker _image_ with `Git`, `Java` and `Maven` installed](https://hub.docker.com/r/jamesdbloom/docker-java8-maven)
 	2. Creates a docker _container_ from the aforementioned docker _image_.
@@ -31,7 +31,7 @@
 		* `mvn spring-boot:run`
 		
 ### Part 2 - Create React Pipeline with this Project
-* Please review the [React Developer Notes](./README-reactdev.md) for additional details on the React application
+* Please review the [React Developer Notes](./client/README.md) for additional details on the React application
 * Create a Jenkins pipeline which
 	1. Pulls a docker _image_ with `Git`, and `Node` installed
 	2. Creates a docker _container_ from the aforementioned docker _image_.
@@ -65,7 +65,7 @@
 
 
 ### Part 4 - Create Full Stack Application with Integration Testing Pipeline with this Project
-* Please review the  [Test Automation Engineer Notes](./README-qa.md) for additional details on the integration testing application
+* Please review the  [Test Automation Engineer Notes](./integration-testing/README.md) for additional details on the integration testing application
 * Create a Jenkins pipeline which
 	1. Dockerizes and Builds Maven Application
 		1. [Pulls a docker _image_ with `Git`, `Java` and `Maven` installed](https://hub.docker.com/r/jamesdbloom/docker-java8-maven)
